@@ -107,7 +107,7 @@ export default class TabNavigator extends React.Component {
     if (item.props.renderBadge) {
       badge = item.props.renderBadge();
     } else if (item.props.badgeText) {
-      badge = <Badge>{item.props.badgeText}</Badge>;
+      badge = <Badge style={item.props.badgeStyle}>{item.props.badgeText}</Badge>;
     }
 
     return (
